@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Deno Task: cache",
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      },
+      "type": "deno",
+      "command": "task",
+      "args": ["cache"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$deno"]
+    },
+    {
+      "label": "Deno Task: run",
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      },
+      "type": "deno",
+      "command": "task",
+      "args": ["run"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$deno"]
+    },
+    {
+      "label": "Deno Task: test",
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      },
+      "type": "deno",
+      "command": "task",
+      "args": ["test"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$deno"]
+    }
+  ]
+}

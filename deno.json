@@ -1,0 +1,20 @@
+{
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "lineWidth": 120,
+      "indentWidth": 2
+    }
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["explicit-function-return-type"]
+    }
+  },
+  "tasks": {
+    "cache": "deno cache ./src/_deps.ts && deno cache ./tests/_deps.ts",
+    "run": "cd ./src && deno run main.ts",
+    "test": "cd ./tests && deno test"
+  }
+}
